@@ -17,4 +17,5 @@ jobs:
   include:
   - stage: Prepare
     script:
+      - sudo mvn clean install
       - echo "Hello world!"
