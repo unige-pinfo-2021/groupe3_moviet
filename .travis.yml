@@ -17,6 +17,5 @@ jobs:
   include:
   - stage: Prepare
     script:
-      - mvn clean install
-      - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=fabriceHategekimana_projet_informatique-moviet
+      - mvn clean install org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=fabriceHategekimana_projet_informatique-moviet
       - echo "Hello world!"
