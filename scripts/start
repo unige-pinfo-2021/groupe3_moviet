@@ -1,4 +1,4 @@
 #!/bin/sh
 #Add the scripts directory in the PATH VARIABLE ENVIRONMENT
 PATH=$PATH:/$(pwd)/scripts
-
+#So we can directly use the files from anywhere in the project
