@@ -6,17 +6,16 @@ services:
 addons:
   sonarcloud:
     organization: "moviet"
-    token:
-      secure: "aZOcV6Cc8ARu1fvcE9O1RF34up2AF3cAIoo6DJn0BVbeufFg/ZGHOZvb68BAXj2p18Wr+RUMnY3MMIfrlwexXuvHusv4+4ftbolCaUIQk28zqcZuyp+vFBI6uHH5mGqQZaxu58E+/kcvR3wwZ83yK9E2v2laujvfd54kYX4K8eFEcdBJJuUz6F0aBGhWDpPpsVYIkaK+nUN4uMWeq7j5Qs9+4e8fS48gWSLahnsRkQQMy2eNyqF3zXVG8owVrffyZGJ2FYrPfuqYYoX0AlezIxMTPEAMvwgsmzoO2e1MF8dfk9gbS6yGl/ClsgjMIhZ1xSu5Dorht/TxkcFwEWqSGUfPBlo5JoGgxDK2LmHEGgOYNPgQkpqb6PEzy88jCQUOaEAcKQomw3IXIVmycGv90qX2O+fe87xDR9IWZqQX/TN8fjcYm+vVnRTU00yTN3OVlpug4v/F+hQN34Kov+YnWh/cRVXbJTJHSvc9cwERpjGrd3lb65L9WZRDThEvQNpUkmUQcosXiv3LGZ70aov4b9YzcU/V70erpoZq/5BuVSs3xKBXHbnwiCZtClhCa+zLvi1tShtnpGQ27DFNXt1eCP6MOqZxujtPwG2GpyxpvH4TDb3gM1Am500fF9vb+7CHJPqpTMrfqJ1GGk+GMb91l3f12QVLBIC6QGtSZVlOQnY="
+
 cache:
   directories:
   - .autoconf
   - $HOME/.m2
   - node_modules
+
 jobs:
   include:
   - stage: Prepare
     script:
       - mvn clean install sonar:sonar -Dsonar.projectKey=fabriceHategekimana_projet_informatique-moviet -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=484c1228ccb3520a2722f9f54475d7c43089add6
-      - echo "Hello world!"
       - echo "Hello world!"
