@@ -17,5 +17,5 @@ jobs:
   include:
   - stage: Prepare
     script:
-      - mvn clean install sonar:sonar -Dsonar.projectKey=fabriceHategekimana_projet_informatique-moviet
+      - mvn clean install sonar:sonar -Dsonar.projectKey=fabriceHategekimana_projet_informatique-moviet -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=484c1228ccb3520a2722f9f54475d7c43089add6
       - echo "Hello world!"
